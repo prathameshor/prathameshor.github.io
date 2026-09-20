@@ -15,12 +15,12 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/prathameshor/prathameshor.github.io.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd portfolio-website
+   cd prathameshor.github.io
    ```
 
 3. **Install dependencies**:
