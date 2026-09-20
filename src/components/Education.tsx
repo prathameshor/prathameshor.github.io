@@ -5,7 +5,7 @@ const Education: React.FC = () => {
     return (
         <section id="education" className="compact-section education-section">
             <div className="compact-heading">
-                <p className="eyebrow">/ 05 — Education</p>
+                <p className="eyebrow"></p>
                 <h2>Education</h2>
             </div>
             <div className="education-list">

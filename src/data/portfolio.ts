@@ -19,10 +19,11 @@ export const portfolioData = {
     email: 'prathamesh.raut.00@gmail.com',
     phone: '+91 9325-483-698',
     github: 'https://github.com/prathameshor',
+    linkedin: 'https://www.linkedin.com/in/prathameshor/',
     website: 'https://prathameshor.github.io',
-    summary: 'I design, develop, and debug scalable software systems, with a focus on event-driven architecture, backend services, and cloud infrastructure.',
+    summary: 'I design, develop, and debug scalable software systems, with a focus on microservices architecture, backend services, and cloud infrastructure.',
   },
-  about: 'Experienced software development engineer with a background in building reliable services for cloud products, building management systems, and AI-enabled workflows. I enjoy working at the boundary between thoughtful system design and the practical details that make production software observable, secure, and maintainable.',
+  about: 'Experienced software development engineer with a background in building reliable services for cloud products. I enjoy working at the boundary between thoughtful system design and the practical details that make production software observable, secure, and maintainable. And in my free time, I am an explorer of life, a reader of books, and a seeker of new experiences.',
   skills: [
     { label: 'Core engineering', skills: ['Golang', 'C#', 'Python', 'REST', 'gRPC', 'GraphQL', 'NATS'] },
     { label: 'Data and platforms', skills: ['PostgreSQL', 'MongoDB', 'AWS Cloud', 'Linux Ubuntu/RHEL', 'Windows'] },
@@ -31,7 +32,7 @@ export const portfolioData = {
   experience: [
     {
       title: 'Software Engineer', company: 'Siemens Technology and Services Private Limited', location: 'Pune, India', duration: 'Jan 2026 - Aug 2026',
-      responsibilities: ['Developed Golang-based event-driven services for Siemens BuildingX BMS, with deployments managed through GitLab CI/CD and AWS.', 'Designed and maintained GitLab CI/CD pipelines to automate application and Terraform infrastructure deployments across AWS environments.', 'Contributed to ComfortScore, a tenant comfort and usage tracking capability, and data flows supporting AI-based fault analysis.', 'Supported AWS infrastructure maintenance and cleanup, reducing cloud costs by 70 percent for affected services.'],
+      responsibilities: ['Worked on BuildingX, Siemens cloud-native smart buildings software suite, building scalable, event-driven backend systems for large-scale, real-world infrastructure.', 'Designed, developed, and maintained distributed microservices using Golang.', 'Built event-driven systems for high-throughput and reliable system communication.', 'Developed event-driven and serverless components using AWS Lambda, SQS, and SNS.', 'Designed and optimized NoSQL data models using Amazon DynamoDB.', 'Built and exposed clean, versioned APIs consumed by internal and external systems.', 'Ensured performance, reliability, and fault tolerance in cloud-based systems.', 'Followed clean architecture principles, strong testing practices, and high code quality standards.', 'Collaborated with global product and engineering teams on core platform features.', 'Designed and maintained GitLab CI/CD pipelines to automate application and Terraform infrastructure deployments across AWS environments.', 'Contributed to ComfortScore, a tenant comfort and usage tracking capability, and data flows supporting AI-based fault analysis.', 'Supported AWS infrastructure maintenance and cleanup, reducing cloud costs by 70 percent for affected services.'],
     },
     {
       title: 'Senior Software Engineer', company: 'Persistent Systems', location: 'Pune, India', duration: 'Aug 2024 - Jan 2026',
@@ -47,12 +48,12 @@ export const portfolioData = {
     },
   ] satisfies ExperienceItem[],
   education: [
-    { degree: 'B.E. in Information Technology', institution: 'Shri Sant Gajanan Maharaj College of Engineering', location: 'Shegaon, India', duration: 'Aug 2018 - Aug 2022', result: 'CGPA: 7.83 / 10.0' },
+    { degree: 'Bachelor of Engineering Information Technology', institution: 'Shri Sant Gajanan Maharaj College of Engineering', location: 'Shegaon, India', duration: 'Aug 2018 - Aug 2022', result: 'CGPA: 7.83 / 10.0' },
     { degree: 'Higher Secondary School Certificate', institution: 'Jawahar Navodaya Vidyalaya', location: 'Washim, India', duration: 'Aug 2017 - Aug 2018', result: 'Percentage: 72.20%' },
     { degree: 'Secondary School Certificate', institution: 'Jawahar Navodaya Vidyalaya', location: 'Washim, India', duration: 'Aug 2015 - Aug 2016', result: 'Percentage: 84.20%' },
   ],
   highlights: [
-    { number: '01', title: 'Event-driven building systems', description: 'Golang services, comfort tracking, and AI fault-analysis data flows for Siemens BuildingX BMS.', tags: ['Golang', 'AWS', 'GitLab CI/CD'] },
+    { number: '01', title: 'Event-driven building systems', description: 'BuildingX backend systems for smart buildings, combining Golang microservices, AWS serverless components, DynamoDB, and reliable event flows.', tags: ['Golang', 'AWS', 'DynamoDB', 'Terraform'] },
     { number: '02', title: 'AI chatbot BFF', description: 'A backend-for-frontend layer designed to keep frontend and backend data flows efficient and observable.', tags: ['Golang', 'gRPC', 'GraphQL'] },
     { number: '03', title: 'Identity and access platforms', description: 'Secure authentication, authorization, and IAM services for cloud and SaaS environments.', tags: ['AWS IAM', 'REST APIs', 'Kubernetes'] },
   ],

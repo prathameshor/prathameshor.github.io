@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
 
     return (
         <section id="skills" className="compact-section skills-section">
-            <div className="compact-heading"><p className="eyebrow">/ 03 — Toolkit</p><h2>Technical skills</h2></div>
+            <div className="compact-heading"><p className="eyebrow"></p><h2>Technical skills</h2></div>
             <div className="skill-groups">{portfolioData.skills.map((group) => <div className="skill-group" key={group.label}><h3><i className={`skill-icon ${skillIcons[group.label]}`} aria-hidden="true" />{group.label}</h3><ul>{group.skills.map((skill) => <li key={skill}>{skill}</li>)}</ul></div>)}</div>
         </section>
     );

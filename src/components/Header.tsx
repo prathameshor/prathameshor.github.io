@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
                     <li><a className={activeSection === 'skills' ? 'is-active' : ''} href="#skills">Skills</a></li>
                     <li><a className={activeSection === 'experience' ? 'is-active' : ''} href="#experience">Experience</a></li>
                     <li><a className={activeSection === 'education' ? 'is-active' : ''} href="#education">Education</a></li>
-                    <li><a className={activeSection === 'work' ? 'is-active' : ''} href="#work">Selected work</a></li>
+                    <li><a className={activeSection === 'work' ? 'is-active' : ''} href="#work">Projects</a></li>
                     <li><a className={activeSection === 'contact' ? 'is-active' : ''} href="#contact">Contact</a></li>
                 </ul>
             </nav>
