@@ -42,14 +42,14 @@ ul { list-style: none; margin: 0; padding: 0; }
 .section-shell, .compact-section { margin: 0 auto; max-width: 1160px; padding-left: 22px; padding-right: 22px; }
 .section-slider > section + section { margin-top: 24px; }
 .section-slider > section { padding-bottom: 28px; padding-top: 28px; }
-.section-slider > section:first-child { padding-top: 76px; }
+.section-slider > section:first-child { padding-top: 10px; }
 .label, .eyebrow, .duration, .compact-date, .work-number { color: var(--muted); font-family: var(--mono); font-size: .67rem; letter-spacing: .08em; text-transform: uppercase; }
 .eyebrow { align-items: center; display: flex; gap: 9px; }
 .status-dot { background: var(--white); border-radius: 50%; height: 7px; width: 7px; }
 
 .hero { align-items: center; display: grid; gap: clamp(36px, 8vw, 120px); grid-template-columns: minmax(0, 1fr) minmax(190px, 260px); min-height: 0; }
 .hero-content { max-width: 760px; }
-.hero h1 { font-size: clamp(3.8rem, 8vw, 7.2rem); font-weight: 800; margin: 16px 0 18px; }
+.hero h1 { font-size: clamp(3.8rem, 6vw, 7.2rem); font-weight: 800; margin: 16px 0 18px; }
 .accent-dot { color: var(--white); }
 .hero-role { font-size: clamp(1.15rem, 2vw, 1.6rem); font-weight: 600; max-width: 680px; }
 .hero-summary { color: var(--muted-dark); font-size: .92rem; line-height: 1.65; margin-top: 14px; max-width: 680px; }
@@ -62,7 +62,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .hero-note strong { font-size: .84rem; }
 
 .section-grid, .contact-grid { align-items: start; display: grid; gap: 48px; grid-template-columns: minmax(180px, .7fr) 1.3fr; }
-.section-heading h2, .contact-grid h2 { font-size: clamp(2.2rem, 4.2vw, 4.6rem); max-width: 620px; }
+.section-heading h2, .contact-grid h2 { font-size: clamp(2.2rem, 3vw, 4.6rem); max-width: 620px; }
 .lead { color: var(--paper); font-size: clamp(1.05rem, 2vw, 1.45rem); font-weight: 600; line-height: 1.5;  }
 .fact-row { border-top: 1px solid var(--line); display: flex; gap: 44px; margin-top: 24px; padding-top: 14px; }
 .fact-row div { display: flex; flex-direction: column; gap: 5px; }
