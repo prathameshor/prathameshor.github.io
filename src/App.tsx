@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -7,39 +7,37 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import { portfolioData } from './data/portfolio';
 import './styles/globals.css';
 
 const sectionIds = ['top', 'about', 'skills', 'experience', 'education', 'work', 'contact'];
 
 const App: React.FC = () => {
-  const sliderRef = useRef<HTMLElement>(null);
   const [activeSection, setActiveSection] = useState('top');
 
   useEffect(() => {
-    const slider = sliderRef.current;
-    if (!slider) return;
+    const sections = sectionIds
+      .map((sectionId) => document.getElementById(sectionId))
+      .filter((section): section is HTMLElement => Boolean(section));
 
-    const updateActiveSection = () => {
-      const panelWidth = slider.clientWidth;
-      const activeIndex = Math.round(slider.scrollLeft / panelWidth);
-      setActiveSection(sectionIds[activeIndex] ?? 'top');
-    };
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleSection = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((first, second) => second.intersectionRatio - first.intersectionRatio)[0];
 
-    slider.addEventListener('scroll', updateActiveSection, { passive: true });
-    updateActiveSection();
-    return () => slider.removeEventListener('scroll', updateActiveSection);
+        if (visibleSection) setActiveSection(visibleSection.target.id);
+      },
+      { rootMargin: '-18% 0px -62% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <div className={activeSection === 'top' ? 'portfolio-app is-dark home-view' : 'portfolio-app is-dark browsing-view'}>
+    <div className="portfolio-app is-dark">
       <Header activeSection={activeSection} />
-      <aside className="intro-rail" aria-label="Profile summary">
-        <a className="intro-rail-name" href="#top">{portfolioData.profile.name}<span className="accent-dot">.</span></a>
-        <p>{portfolioData.profile.role}</p>
-        <span>{portfolioData.profile.location}</span>
-      </aside>
-      <main ref={sliderRef} className="section-slider" aria-label="Portfolio sections">
+      <main className="section-slider" aria-label="Portfolio sections">
         <Hero />
         <About />
         <Skills />
