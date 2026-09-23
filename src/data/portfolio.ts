@@ -48,7 +48,7 @@ export const portfolioData = {
     },
   ] satisfies ExperienceItem[],
   education: [
-    { degree: 'Bachelor of Engineering Information Technology', institution: 'Shri Sant Gajanan Maharaj College of Engineering', location: 'Shegaon, India', duration: 'Aug 2018 - Aug 2022', result: 'CGPA: 7.83 / 10.0' },
+    { degree: 'Bachelor of Engineering Information Technology', institution: 'Sant Gadge Baba Amravati University', location: 'Amravati, India', duration: 'Aug 2018 - Aug 2022', result: 'CGPA: 7.83 / 10.0' },
     { degree: 'Higher Secondary School Certificate', institution: 'Jawahar Navodaya Vidyalaya', location: 'Washim, India', duration: 'Aug 2017 - Aug 2018', result: 'Percentage: 72.20%' },
     { degree: 'Secondary School Certificate', institution: 'Jawahar Navodaya Vidyalaya', location: 'Washim, India', duration: 'Aug 2015 - Aug 2016', result: 'Percentage: 84.20%' },
   ],

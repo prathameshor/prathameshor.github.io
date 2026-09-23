@@ -42,7 +42,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .section-shell, .compact-section { margin: 0 auto; max-width: 1160px; padding-left: 22px; padding-right: 22px; }
 .section-slider > section + section { margin-top: 24px; }
 .section-slider > section { padding-bottom: 28px; padding-top: 28px; }
-.section-slider > section:first-child { padding-top: 10px; }
+.section-slider > section:first-child { padding-top: 0px; }
 .label, .eyebrow, .duration, .compact-date, .work-number { color: var(--muted); font-family: var(--mono); font-size: .67rem; letter-spacing: .08em; text-transform: uppercase; }
 .eyebrow { align-items: center; display: flex; gap: 9px; }
 .status-dot { background: var(--white); border-radius: 50%; height: 7px; width: 7px; }
@@ -78,7 +78,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .skill-icon { display: inline-block; margin-right: 8px; }
 .skill-group ul { display: flex; flex-wrap: wrap; gap: 5px; }
 .skill-group li, .tag-list li { align-items: center; background: var(--paper-deep); display: inline-flex; font-family: var(--mono); font-size: .62rem; gap: 6px; padding: 5px 7px; }
-.skill-tech-icon { filter: grayscale(1) brightness(0) invert(1); font-size: .82rem; line-height: 1; }
+.skill-tech-icon { filter: grayscale(1) brightness(0) invert(1); font-size: 1.3rem; line-height: 1; }
 .skill-tech-fallback { font-size: .8rem; line-height: 1; width: 12px; }
 
 .experience-section { background: linear-gradient(115deg, rgba(255, 255, 255, .035), transparent 48%); }
